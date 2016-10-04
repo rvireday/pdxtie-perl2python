@@ -50,18 +50,3 @@ hardware ethernet   00:50:04:53:D5:57;
 uid 01:00:50:04:53:D5:57;
 client-hostname "Free";
 }
-
-host a-1 {
-    hardware ethernet f4:6d:04:5f:38:65;
-    fixed-address 192.168.0.1;
-}
-
-host lucky7 {
-    hardware ethernet f4:6d:04:5f:38:65;
-    fixed-address 192.168.0.7;
-}
-
-host pi {
-    hardware ethernet f4:6d:04:5f:38:65;
-    fixed-address 192.168.3.14;
-}

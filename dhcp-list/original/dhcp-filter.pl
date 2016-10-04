@@ -9,7 +9,7 @@
 #   ends 6 2012/09/15 17:21:51;
 #   tstp 6 2012/09/15 17:21:51;
 #   binding state free;
-#   binding state active;
+#   binding state active;  -- this marks as an active value
 #   hardware ethernet 00:0c:29:64:b5:21;
 #   uid "\001\000\014)d\265!";
 #   client-hostname "rpv-ct002";
