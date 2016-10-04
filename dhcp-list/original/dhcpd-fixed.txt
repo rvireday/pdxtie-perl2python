@@ -1,0 +1,6 @@
+<br/>
+<br/>Fixed List Tue Oct  4 02:22:21 PDT 2016
+<br/>
+fixed-ip: <a href="http://192.168.0.1;">192.168.0.1;</a>; name: a-1<br/>
+fixed-ip: <a href="http://192.168.0.7;">192.168.0.7;</a>; name: lucky7<br/>
+fixed-ip: <a href="http://192.168.3.14;">192.168.3.14;</a>; name: pi

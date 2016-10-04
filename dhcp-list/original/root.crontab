@@ -1,0 +1,11 @@
+# Every reboot
+@reboot /root/reboot-script.sh
+
+# Run this every minute, to update the DHCP leases
+# Note that it should only run if the DHCP Server is active
+* * * * *	(cd /var/www/html; ./dhcp-script.sh)
+
+# On reboot and once a week, regen the fixed leases, if any
+01 01 * * 7	(cd /var/www/html; ./dhcp-fixed-script.sh)
+
+# minute, hour, day of month, month, day of week
