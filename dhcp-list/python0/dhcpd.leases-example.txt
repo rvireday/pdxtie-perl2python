@@ -1,0 +1,60 @@
+# dhcpd.leases-example.txt
+# Note that some distros will put this in different locations,
+# and that the examples in here are parseably correct but not real.
+
+lease 192.168.0.10 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet 00:50:04:53:D5:57;
+uid 01:00:50:04:53:D5:57;
+client-hostname "PC0097";
+binding state active;
+}
+
+lease 192.168.0.11 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet    00:00:00:00:00:00;
+uid 01:00:50:04:53:D5:57;
+client-hostname "BadMAC";
+binding state active;
+}
+
+lease 192.168.0.12 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet   00:50:04:53:D5:57;
+uid 01:00:50:04:53:D5:57;
+client-hostname "SameLease-Overrides1";
+binding state active;
+}
+
+# Note that if you do have two with the same DHCP address and both active,
+# you might have a bigger problem with your DHCP server!
+lease 192.168.0.12 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet   00:50:04:53:D5:57;
+uid 01:00:50:04:53:D5:57;
+client-hostname "SameLease-Overrides-2";
+binding state active;
+}
+
+lease 192.168.0.13 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet   00:50:04:53:D5:57;
+uid 01:00:50:04:53:D5:57;
+client-hostname "Free";
+binding state free;
+
+
+lease 192.168.0.13 {
+starts 0 2000/01/30 08:02:54;
+ends 5 2000/02/04 08:02:54;
+hardware ethernet   00:50:04:53:D5:57;
+uid 01:00:50:04:53:D5:57;
+client-hostname "Freedum";
+}
+
+# End of dhcpd.leases-example.txt

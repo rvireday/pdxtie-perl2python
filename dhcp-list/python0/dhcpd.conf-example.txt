@@ -1,0 +1,15 @@
+
+host a-1 {
+    hardware ethernet f4:6d:04:5f:38:65;
+    fixed-address 192.168.0.1;
+}
+
+host lucky7 {
+    hardware ethernet f4:6d:04:5f:38:65;
+    fixed-address 192.168.0.7;
+}
+
+host pi {
+    hardware ethernet f4:6d:04:5f:38:65;
+    fixed-address 192.168.3.14;
+}
